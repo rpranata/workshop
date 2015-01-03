@@ -9,10 +9,11 @@ var app = require('./index.js');
 describe('Bodies', function () {
   it('GET /stream should return a stream', function (done) {
     var body = fs.readFileSync(path.join(__dirname, 'index.js'), 'utf8');
+    var stat = fs.statSync(path.join(__dirname, 'index.js'));
 
     request(app.listen())
     .get('/stream')
-    .expect('Content-Type', /application\/javascript/)
+    .expect('Content-Type', /application\/javascript/).expect('Content-Length', stat.size)
     .expect(body, done);
   })
 
