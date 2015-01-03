@@ -8,6 +8,7 @@ var app = module.exports = koa();
  * Hint: this only requires a single line of code.
  */
 
-app.use(function* () {
-
-});
+var response = function *(){
+    this.response.body = "Hello World!"
+}
+app.use(response);
