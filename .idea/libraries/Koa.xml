@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Koa" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="node_modules" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/koa" />
+        <item url="file://$PROJECT_DIR$/node_modules/koa/lib" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/koa" />
+      <root url="file://$PROJECT_DIR$/node_modules/koa/lib" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
